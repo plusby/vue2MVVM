@@ -1,0 +1,30 @@
+# MacOS file
+.DS_Store
+
+# Project directories and files
+node_modules/
+dist/
+## npm-shrinkwrap.json
+## package-lock.json
+## yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test/unit/coverage/
+test/e2e/reports/
+selenium-debug.log
+login.js
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Others
+.project
+*.zip
+
+src/views/modules/collectionQRcode/APP.vue

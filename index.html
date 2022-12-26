@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <p>姓名：{{ name }}</p>
+  </div>
+  <!-- <div id="app">表格
+    <p>姓名：{{ name }}</p>
+    <p>计算属性：{{ fullName }}</p>
+    <p>{{ list }}</p>
+    <p>深层次的对象{{ obj.a }}</p>
+    <p>深层次的对象{{ obj.b }}</p>
+    <b></b>
+  </div> -->
+  <script src="/dist/umd/vue.js"></script>
+  <script>
+    // Vue.mixin({
+    //   created(){
+        
+    //   },
+    // })
+    // Vue.mixin({
+    //   created(){
+    //   },
+    // })
+    // Vue.component('b', {
+    //   template: '<p>{{ a }}{{ name }}</p>',
+    //   data () {
+    //     return {
+    //       a: 999
+    //     }
+    //   },
+    //   created(){
+    //     // ('子组件的created')
+    //   },
+    //   beforeMount(){
+    //     // ('子组件的beforeMount')
+    //   }
+    // })
+    const v = new Vue({
+      el: '#app',
+      data(){
+        return {
+          // list: [1,2,3],
+          name:122,
+          // obj: {
+          //   a: {
+          //     b: 22
+          //   }
+          // },
+          // firstName: '123',
+          // second: '456'
+        }
+      },
+      created(){
+        // ('父组件的created')
+      },
+      beforeMount(){
+        console.log('父组件的beforeMount')
+      },
+      mounted(){
+        console.log('父组件的mounted')
+      },
+      // components: {
+      //   b: {
+      //     template: '<a>{{ name }}</a>',
+      //     data(){
+      //       return {
+      //         name: '我是组件'
+      //       }
+      //     },
+      //     beforeMount(){
+      //       console.log('子组件的beforeMount')
+      //     }
+      //   }
+      // },
+      updated () {
+        // ('更新完毕')
+      },
+      // watch: {
+      //   'name': (news,old) => {
+      //     // ('news,old', news,old)
+      //   }
+      // },
+      // computed: {
+      //   fullName () {
+      //     // ('计算属性')
+      //     return this.firstName + this.second
+      //   },
+      // },
+      // tempalte: '',
+      // render () {}
+    })
+    // v.list.push(4)
+    // setTimeout(() => {
+      
+    //   v.list.push(5)
+    //   v.list.push(6)
+    //   // (v.fullName)
+    //   // (v.fullName)
+    //   // // ('更新前', v.$el.outerHTML)
+    //   // v.$nextTick(() => {
+    //   //   // ('更新后', v.$el.outerHTML)
+    //   // })
+    //   // v._update(v._render())
+    // },2000)
+    // (v)
+  </script>
+</body>
+</html>
